@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelivan Payments System - Global Distribution Node</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-box">SⰄ</div>
+                <div class="brand-names">
+                    <h2>SHELIVAN</h2>
+                    <p>Premium Wealth</p>
+                </div>
+            </div>
+            <nav class="menu-items">
+                <a href="dashboard.html" class="menu-link"><span class="nav-icon">📊</span><span>Dashboard</span></a>
+                <a href="transfer.html" class="menu-link active"><span class="nav-icon">💸</span><span>Transfer Funds</span></a>
+                <a href="#" class="menu-link"><span class="nav-icon">📈</span><span>Wealth Growth</span></a>
+                <a href="profile.html" class="menu-link"><span class="nav-icon">👤</span><span>Profile Settings</span></a>
+            </nav>
+            <div class="sidebar-user"><p>Node: <strong>Lagos, NG</strong></p></div>
+        </aside>
+
+        <main class="main-canvas">
+            <header class="canvas-header">
+                <div>
+                    <h1>Asset Remittance Pipeline</h1>
+                    <p>Distribute capital allocations instantly across borderless clearance houses.</p>
+                </div>
+            </header>
+
+            <div class="bento-grid transfer-grid">
+                <div class="card">
+                    <h3>Distribution Parameter Matrix</h3>
+                    
+                    <h4 style="margin-top: 20px; font-size: 13px; color: var(--text-muted); text-transform: uppercase;">Trusted Intermediary Nodes</h4>
+                    <div class="beneficiary-list">
+                        <div class="beneficiary-item">
+                            <div class="b-avatar">MF</div>
+                            <span>Faith's K.</span>
+                        </div>
+                        <div class="beneficiary-item">
+                            <div class="b-avatar">KV</div>
+                            <span>Kivan Dev</span>
+                        </div>
+                        <div class="beneficiary-item">
+                            <div class="b-avatar">MS</div>
+                            <span>Mshelia Vault</span>
+                        </div>
+                    </div>
+
+                    <form onsubmit="event.preventDefault(); window.location.href='#success-modal';">
+                        <div class="form-group">
+                            <label>Destination Clearing House Bank</label>
+                            <select class="input-control" style="appearance: none; background-color: #fff;">
+                                <option>Shelivan Central Clearing Reserve</option>
+                                <option>OPay Digital Network Hub</option>
+                                <option>Kivan Swiss Corporate Node</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Target Core Routing Number</label>
+                            <input type="text" class="input-control" placeholder="Ex: 9021485290" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Allocation Value Amount (USD)</label>
+                            <input type="number" class="input-control" placeholder="0.00" min="1" required>
+                        </div>
+
+                        <button type="submit" class="btn-gold" style="width: 100%; margin-top: 10px;">Authorize Instant Liquidation</button>
+                    </form>
+                </div>
+
+                <div class="card" style="background-color: rgba(35, 25, 66, 0.02); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Remittance Verification</h3>
+                        <p style="font-size: 14px; color: var(--text-muted); margin-top: 10px;">Transactions authorized via the Shelivan Ledger ecosystem settle instantly with zero intermediary holding debt.</p>
+                        
+                        <div class="summary-box">
+                            <div class="summary-row"><span>Remittance Network Fee</span><span style="color: #00b058; font-weight: 700;">WAIVED</span></div>
+                            <div class="summary-row"><span>Settlement Architecture</span><span>Instant Matrix</span></div>
+                            <div class="summary-row total"><span>Operational Priority</span><span>Tier 1 Elite</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>    
+    </div>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-box" style="text-align: center;">
+            <div style="font-size: 50px; margin-bottom: 15px;">✨</div>
+            <h3 style="color: var(--primary-plum); font-size: 24px;">Remittance Manifest Confirmed</h3>
+            <p style="color: var(--text-muted); font-size: 14px; margin: 10px 0 25px 0;">Your financial assets have cleared our central validation pipeline and are settled immediately inside the target endpoint node.</p>
+            <a href="dashboard.html" class="btn-gold" style="width: 100%;">Return to Command Center</a>
+        </div>
+    </div>
+
+</body>
+</html>

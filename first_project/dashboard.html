@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shelivan | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="home.html" class="logo">
+        <span class="logo-icon"><i class="fas fa-gem"></i></span>
+        <span>
+          <span class="logo-main">Shelivan</span>
+          <span class="logo-sub">Premium Wealth</span>
+        </span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li><a href="transfer.html">Transfer</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="signin.html">Sign In</a>
+        <a class="btn btn-gold" href="get-started.html">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dashboard</span>
+        <h2>Your Wealth at a <span class="gold-text">Single Glance</span></h2>
+        <p>See your account balance, income, expenses, and recent activity.</p>
+      </div>
+
+      <section class="dashboard-card">
+        <div class="dashboard-top">
+          <div>
+            <p class="section-tag">Portfolio Value</p>
+            <div class="dashboard-balance">$248,500.00</div>
+            <p class="positive">+$5,942 this month</p>
+          </div>
+
+          <a href="transfer.html" class="btn btn-gold">Send Money</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>$12,400</strong>
+            <span>Income</span>
+          </div>
+          <div class="stat">
+            <strong>$6,458</strong>
+            <span>Expenses</span>
+          </div>
+          <div class="stat">
+            <strong>47.9%</strong>
+            <span>Savings Rate</span>
+          </div>
+        </div>
+
+        <br/>
+
+        <h3>Recent Transactions</h3>
+
+        <div class="transaction">
+          <div>
+            <strong>Luxury Boutique</strong>
+            <span>Fashion · Today</span>
+          </div>
+          <strong class="negative">-$320.00</strong>
+        </div>
+
+        <div class="transaction">
+          <div>
+            <strong>Investment Return</strong>
+            <span>Portfolio · Yesterday</span>
+          </div>
+          <strong class="positive">+$1,240.00</strong>
+        </div>
+
+        <div class="transaction">
+          <div>
+            <strong>Fine Dining</strong>
+            <span>Dining · Monday</span>
+          </div>
+          <strong class="negative">-$185.00</strong>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; 2026 Shelivan Premium Wealth. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

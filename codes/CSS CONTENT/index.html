@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelia Worldtech | Innovating the Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. MODAL TOGGLES (Hidden Checkboxes) -->
+    <input type="checkbox" id="modal-login" class="modal-state-input">
+    <input type="checkbox" id="modal-register" class="modal-state-input">
+
+    <!-- 2. NAVIGATION BAR -->
+    <nav class="navbar">
+        <h1 class="logo">Shelia Worldtech</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portal">Portal</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <!-- Labels linked to the hidden checkboxes above -->
+            <label for="modal-login" class="btn-outline">Login</label>
+            <label for="modal-register" class="btn-solid">Register</label>
+        </div>
+    </nav>
+
+    <!-- 3. MODAL OVERLAYS -->
+    <div class="modal-overlay login-overlay">
+        <div class="modal-box">
+            <label for="modal-login" class="close-btn">&times;</label>
+            <h3>Admin Login</h3>
+            <p>Enter your credentials to access the secure portal.</p>
+            <form action="#">
+                <input type="text" placeholder="Username or Email" class="modal-input" required>
+                <input type="password" placeholder="Password" class="modal-input" required>
+                <button type="submit" class="btn-solid" style="width: 100%;">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay register-overlay">
+        <div class="modal-box">
+            <label for="modal-register" class="close-btn">&times;</label>
+            <h3>Partner Registration</h3>
+            <p>Join our global network of tech innovators.</p>
+            <form action="#">
+                <input type="text" placeholder="Full Name" class="modal-input" required>
+                <input type="email" placeholder="Business Email" class="modal-input" required>
+                <input type="password" placeholder="Create Password" class="modal-input" required>
+                <button type="submit" class="btn-solid" style="width: 100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="container">
+        
+        <!-- 4. HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Future of Tech</h2>
+                <p>Bridging the gap between imagination and digital reality with high-end programming solutions and tech education.</p>
+            </div>
+        </section>
+
+        <!-- 5. FOCUS AREAS GRID -->
+        <section class="grid-container">
+            <div class="grid-item"><h4>Cloud Computing</h4><p>Scalable infrastructure</p></div>
+            <div class="grid-item"><h4>Cyber Security</h4><p>Next-gen protection</p></div>
+            <div class="grid-item"><h4>UI/UX Design</h4><p>User-centric paths</p></div>
+            <div class="grid-item"><h4>Data Science</h4><p>Predictive analytics</p></div>
+        </section>
+
+        <!-- 6. SERVICES SECTION -->
+        <section id="services">
+            <h3 class="section-title">Featured Services</h3>
+            <div class="auto-grid">
+                <div class="course-card">
+                    <div class="card-content">
+                        <h4>Fullstack Development</h4>
+                        <p>Master modern web architecture with HTML, CSS, and advanced frameworks.</p>
+                        <button class="btn-solid">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-content">
+                        <h4>Mobile App Design</h4>
+                        <p>Build stunning, high-performance iOS and Android applications.</p>
+                        <button class="btn-solid">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-content">
+                        <h4>Artificial Intelligence</h4>
+                        <p>Dive deep into Machine Learning and neural network implementation.</p>
+                        <button class="btn-solid">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. INTERACTIVE ADMIN PORTAL -->
+        <section id="portal" class="dashboard-wrapper">
+            <h3 class="section-title">Admin Portal</h3>
+            
+            <!-- Hidden Radio Buttons for Tab Logic -->
+            <input type="radio" name="portal-tabs" id="radio-overview" class="tab-radio" checked>
+            <input type="radio" name="portal-tabs" id="radio-analytics" class="tab-radio">
+            <input type="radio" name="portal-tabs" id="radio-projects" class="tab-radio">
+            <input type="radio" name="portal-tabs" id="radio-settings" class="tab-radio">
+
+            <div class="dashboard-layout">
+                <aside class="sidebar">
+                    <h4>Management</h4>
+                    <ul class="sidebar-menu">
+                        <li><label for="radio-overview" class="tab-label">Overview</label></li>
+                        <li><label for="radio-analytics" class="tab-label">Analytics</label></li>
+                        <li><label for="radio-projects" class="tab-label">Projects</label></li>
+                        <li><label for="radio-settings" class="tab-label">Settings</label></li>
+                    </ul>
+                </aside>
+
+                <div class="dashboard-main">
+                    <!-- Tab Pane: Overview -->
+                    <div class="tab-pane pane-overview">
+                        <header class="dashboard-header">
+                            <h3>Project Stats</h3>
+                            <div class="profile-text">Welcome, <strong>Shelia Admin</strong></div>
+                        </header>
+                        <div class="stats-container">
+                            <div class="stat-card"><h4>45</h4><p>Active Projects</p></div>
+                            <div class="stat-card"><h4>$12,400</h4><p>Monthly Revenue</p></div>
+                            <div class="stat-card"><h4>128</h4><p>Global Clients</p></div>
+                        </div>
+                        <div class="table-section">
+                            <h4>Recent Transactions</h4>
+                            <table>
+                                <thead>
+                                    <tr><th>Client Name</th><th>Service</th><th>Status</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Global Tech Inc.</td><td>Web Audit</td><td><span class="status-tag">Completed</span></td></tr>
+                                    <tr><td>Eco Solutions</td><td>App Dev</td><td><span class="status-tag pending">Pending</span></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tab Pane: Analytics -->
+                    <div class="tab-pane pane-analytics">
+                        <h3>Traffic Analytics</h3>
+                        <div class="stat-card" style="border: 1px dashed var(--accent); margin-top: 20px;">
+                            <p>Website Traffic: <strong>+45% this week</strong></p>
+                            <p>Conversion Rate: <strong>3.2%</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Tab Pane: Projects -->
+                    <div class="tab-pane pane-projects">
+                        <h3>Project Roadmap</h3>
+                        <p>Detailed view of upcoming software sprints and educational releases.</p>
+                        <div class="grid-item" style="margin-top: 15px;">Project Alpha: Deploying Oct 2026</div>
+                    </div>
+
+                    <!-- Tab Pane: Settings -->
+                    <div class="tab-pane pane-settings">
+                        <h3>Security Settings</h3>
+                        <p>Manage your account preferences and security protocols.</p>
+                        <div style="margin-top: 20px;">
+                            <button class="btn-outline">Change Password</button>
+                            <button class="btn-solid">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shelia Worldtech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

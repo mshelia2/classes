@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Madam Faith's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        #contact-address { padding-top: 10rem; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="logo">Madam Faith's Kitchen</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact-address.html" class="active">Find & Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="contact-address" class="container">
+        <h2>Find & Contact Us</h2>
+        <div class="contact-grid">
+            
+          
+            <div class="info-box">
+                <h3>Our Location & Hours</h3>
+                <p><strong>Address:</strong> sabon gari road, opposite nepa office, bwari, abuja, Nigeria.</p>
+                <p><strong>Phone:</strong> +234 9158310302</p>
+                <p><strong>Email:</strong> reservations@madamfaithskitchen.com</p>
+                <br>
+                <h3>Opening Hours</h3>
+                <p><strong>Monday - Friday:</strong> 8:00 AM - 10:00 PM</p>
+                <p><strong>Saturday - Sunday:</strong> 10:00 AM - 11:00 PM</p>
+            </div>
+
+          
+            <div>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="bulus mshelia">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="mshelia@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message / Reservation Request</label>
+                        <textarea id="message" rows="5" required placeholder="Tell us your location, dishes selected, and any additional details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Request</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2026 Madam Faith's Kitchen. All Rights Reserved. Premium Homemade Flavour.</p>
+    </footer>
+
+</body>
+</html>

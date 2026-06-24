@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelivan | Secure Access Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-card">
+        <div class="auth-header">
+            <div class="logo-box" style="display: inline-block; margin-bottom: 15px;">SⰄ</div>
+            <h2>SHELIVAN</h2>
+            <p style="color: var(--text-muted); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Premium Wealth Management</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+            <div class="form-group">
+                <label>Secure Identifier / Email</label>
+                <input type="email" class="input-control" placeholder="name@shelivan-elite.com" required>
+            </div>
+            <div class="form-group">
+                <label>Passphrase</label>
+                <input type="password" class="input-control" placeholder="••••••••••••" required>
+            </div>
+
+            <div class="form-actions">
+                <label style="display: flex; align-items: center; gap: 8px; color: var(--text-muted); cursor: pointer;">
+                    <input type="checkbox"> Remember Node
+                </label>
+                <a href="#" class="forgot-link">Forgot Key?</a>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%; margin-bottom: 15px;">Authorize Secure Session</button>
+            <a href="index.html" class="btn-plum" style="width: 100%;">Return to Public Website</a>
+        </form>
+    </div>
+
+</body>
+</html>

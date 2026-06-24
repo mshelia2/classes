@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelia World | Tech Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <---!header section--->
+    <header class="navbar">
+        <div class="logo">SHELIA WORLD | TECH</div>
+    </header>
+
+    <main class="container">
+        
+        <section class="bio-card">
+            <h1> About Me </h1>
+            <p> At Shelia World | Tech, we bridge the gap between imagination and reality. I am a developer dedicated to building the future of the web .</p>
+            <button class="open-btn" onclick="toggleModal ('flex')">  Our Mission  </button>
+        </section>
+
+       
+        <section class="services-grid">
+            <div class="card">
+                <h3> Web Design and development  </h3>
+                <p> Creating beautiful, responsive layouts. </p>
+            </div>
+            <div class="card">
+                <h3>Tech Strategy</h3>
+                <p> Planning the digital roadmap for success. </p>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-icon" onclick="toggleModal('none')">&times;</span>
+            <h2>Shelia World | Tech</h2>
+            <hr>
+            <p><strong> Founded: </strong> 2026 </p>
+            <p><strong> Goal: </strong> To provide top-tier tech education and software development services globally.</p>
+            <p> We focus on clean code, user-centric design, and scalable architecture. </p>
+            <b> bring innovation to invention </b>
+        </div>
+    </div>
+
+    
+</body>
+</html>

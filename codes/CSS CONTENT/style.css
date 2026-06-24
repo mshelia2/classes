@@ -1,0 +1,250 @@
+/* 1. Global Variables & Reset */
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --accent: #f59e0b;
+    --accent-hover: #d97706;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --sidebar-bg: #111827;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    scroll-behavior: smooth;
+}
+
+/* 2. Hidden Inputs Logic */
+.modal-state-input, .tab-radio {
+    display: none;
+}
+
+/* 3. Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo { color: var(--accent); font-weight: 800; font-size: 1.5rem; }
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* 4. Modal CSS Logic */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-box {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--accent);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: var(--bg-dark);
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px; top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-dim);
+}
+
+/* Modal Trigger Logic */
+#modal-login:checked ~ .login-overlay { display: flex; }
+#modal-register:checked ~ .register-overlay { display: flex; }
+
+/* 5. Dashboard Tab Logic */
+.tab-pane {
+    display: none; /* Hidden by default */
+    animation: fadeIn 0.4s ease;
+}
+
+/* Show pane based on which radio is checked */
+#radio-overview:checked ~ .dashboard-layout .pane-overview { display: block; }
+#radio-analytics:checked ~ .dashboard-layout .pane-analytics { display: block; }
+#radio-projects:checked ~ .dashboard-layout .pane-projects { display: block; }
+#radio-settings:checked ~ .dashboard-layout .pane-settings { display: block; }
+
+/* Sidebar Label Styling */
+.tab-label {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: 0.3s;
+}
+
+.tab-label:hover { color: var(--accent); }
+
+/* Active Tab Styling */
+#radio-overview:checked ~ .dashboard-layout .sidebar label[for="radio-overview"],
+#radio-analytics:checked ~ .dashboard-layout .sidebar label[for="radio-analytics"],
+#radio-projects:checked ~ .dashboard-layout .sidebar label[for="radio-projects"],
+#radio-settings:checked ~ .dashboard-layout .sidebar label[for="radio-settings"] {
+    background: var(--accent);
+    color: #000;
+    font-weight: bold;
+}
+
+/* 6. Layout & Components */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 2rem 0; }
+
+.hero { padding: 4rem 0; text-align: center; }
+.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.grid-item {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* 7. Dashboard Layout */
+.dashboard-wrapper {
+    background: var(--sidebar-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 500px;
+}
+
+.sidebar { background: #0f172a; padding: 2rem; border-right: 1px solid rgba(255,255,255,0.05); }
+.dashboard-main { padding: 2rem; background: var(--bg-dark); }
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-card h4 { color: var(--accent); font-size: 1.5rem; }
+
+/* 8. Buttons & Utilities */
+.btn-solid, .btn-outline {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.btn-solid { background: var(--accent); color: #000; }
+.btn-solid:hover { background: var(--accent-hover); }
+
+.btn-outline { background: transparent; border: 1px solid var(--text-dim); color: var(--text-main); }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.status-tag {
+    background: #065f46;
+    color: #34d399;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.status-tag.pending { background: #78350f; color: #fbbf24; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--bg-card); }
+
+footer { text-align: center; padding: 3rem; opacity: 0.6; font-size: 0.9rem; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dashboard-layout { grid-template-columns: 1fr; }
+    .sidebar { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-links { display: none; }
+}
