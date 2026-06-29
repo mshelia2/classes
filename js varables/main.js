@@ -1,3 +1,5 @@
+// Assignment //
+
 const myPet = {
   name: "Bingo",
   type: "Dog",
@@ -20,3 +22,31 @@ const myPet = {
 myPet.feed();
 myPet.play();
 console.log(myPet);
+
+
+// ternary operators //
+let age = 20;
+
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+
+// relational operators //
+let person = {
+  name: "John",
+  age: 25
+};
+
+console.log("name" in person);
+
+// nullish coasilating //
+let username = null;
+
+console.log(username ?? "Guest");
+
+// type operators //
+typeof "Hello";
+typeof 10;
+typeof true;
