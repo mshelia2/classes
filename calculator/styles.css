@@ -1,0 +1,395 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#10B981);
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:white;
+    font-size:28px;
+    font-weight:600;
+}
+
+/* ===========================
+   TIP CALCULATOR
+=========================== */
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    color:white;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    background:white;
+
+}
+
+.input-group input:focus{
+
+    box-shadow:0 0 10px #10B981;
+
+}
+
+#calculateTip{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:#10B981;
+
+    transition:.3s;
+
+}
+
+#calculateTip:hover{
+
+    background:#0d966b;
+
+    transform:scale(1.03);
+
+}
+
+/* ===========================
+   RESULTS
+=========================== */
+
+.results{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.result-box{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.result-box span{
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.result-box h3{
+
+    margin-top:8px;
+
+    color:#10B981;
+
+    font-size:26px;
+
+}
+
+/* ===========================
+   NORMAL CALCULATOR
+=========================== */
+
+#display{
+
+    width:100%;
+
+    height:75px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    padding:20px;
+
+    font-size:30px;
+
+    text-align:right;
+
+    background:white;
+
+    color:#111827;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   BUTTON GRID
+=========================== */
+
+.calculator-buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    height:65px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    background:white;
+
+    color:#111827;
+
+    transition:.25s;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn:active{
+
+    transform:scale(.95);
+
+}
+
+/* ===========================
+   SPECIAL BUTTONS
+=========================== */
+
+.operator{
+
+    background:#3B82F6;
+
+    color:white;
+
+}
+
+.operator:hover{
+
+    background:#2563EB;
+
+}
+
+.equals{
+
+    background:#F97316;
+
+    color:white;
+
+}
+
+.equals:hover{
+
+    background:#EA580C;
+
+}
+
+.clear{
+
+    background:#EF4444;
+
+    color:white;
+
+}
+
+.clear:hover{
+
+    background:#DC2626;
+
+}
+
+.delete{
+
+    background:#F59E0B;
+
+    color:white;
+
+}
+
+.delete:hover{
+
+    background:#D97706;
+
+}
+
+/* Zero button spans 2 columns */
+
+.zero{
+
+    grid-column:span 2;
+
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+body{
+
+padding:20px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.btn{
+
+height:58px;
+
+font-size:20px;
+
+}
+
+#display{
+
+height:65px;
+
+font-size:26px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+}
