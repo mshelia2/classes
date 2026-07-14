@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fruit Quiz Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+
+
+<div id="registerPage" class="card">
+
+
+<h1>🍎 Welcome To Fruit Quiz</h1>
+
+
+<p class="intro">
+Register before you start playing!
+</p>
+
+
+
+<form id="registerForm">
+
+
+<input 
+type="text" 
+id="username"
+placeholder="Enter your full name">
+
+
+
+<input 
+type="email"
+id="email"
+placeholder="Enter your email">
+
+
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter your phone number">
+
+
+
+<button type="submit">
+Start Quiz 🚀
+</button>
+
+
+<p id="registerMessage"></p>
+
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="quizPage" class="card hidden">
+
+
+<h1>🍌 Fruit Quiz</h1>
+
+
+<h3 id="welcomeUser"></h3>
+
+
+<p id="progress">
+Question 1 / 10
+</p>
+
+
+
+<h2 id="question">
+Question here
+</h2>
+
+
+
+<div id="options">
+
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+
+</div>
+
+
+
+
+<div class="button-group">
+
+
+<button id="nextBtn">
+Next ➡
+</button>
+
+
+
+<button id="stopBtn">
+Stop ⛔
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="resultPage" class="card hidden">
+
+
+<h1>🎉 Quiz Completed</h1>
+
+
+
+<h2 id="score"></h2>
+
+
+
+<p id="resultMessage"></p>
+
+
+
+
+<div class="button-group">
+
+
+<button id="reviewBtn">
+Review Answers 📖
+</button>
+
+
+
+<button id="restartBtn">
+Play Again 🔄
+</button>
+
+
+
+<button id="newPlayerBtn">
+New Player 👤
+</button>
+
+
+</div>
+
+
+
+
+
+<div id="reviewBox"></div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
