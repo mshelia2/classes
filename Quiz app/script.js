@@ -1,5 +1,3 @@
-
-
 const questions = [
 
 {
@@ -60,12 +58,243 @@ answer:"Strawberry"
 question:"Which fruit grows in bunches?",
 options:["Grape","Watermelon","Apple","Pawpaw"],
 answer:"Grape"
+},
+
+{
+question:"Which fruit is also called pawpaw?",
+options:["Papaya","Mango","Pear","Cherry"],
+answer:"Papaya"
+},
+
+{
+question:"Which fruit has a fuzzy brown skin?",
+options:["Kiwi","Apple","Orange","Banana"],
+answer:"Kiwi"
+},
+
+{
+question:"Which fruit is commonly used to make juice?",
+options:["Orange","Apple","Mango","Grape"],
+answer:"Orange"
+},
+
+{
+question:"Which fruit is red and heart shaped?",
+options:["Strawberry","Lemon","Grape","Coconut"],
+answer:"Strawberry"
+},
+
+{
+question:"Which fruit has a hard shell?",
+options:["Coconut","Apple","Banana","Cherry"],
+answer:"Coconut"
+},
+
+{
+question:"Which fruit is small and round?",
+options:["Cherry","Mango","Pineapple","Avocado"],
+answer:"Cherry"
+},
+
+{
+question:"Which fruit is commonly used in smoothies?",
+options:["Banana","Onion","Garlic","Pepper"],
+answer:"Banana"
+},
+
+{
+question:"Which fruit is green and shaped like a pear?",
+options:["Avocado","Orange","Grape","Cherry"],
+answer:"Avocado"
+},
+
+{
+question:"Which fruit can be red, green, or yellow?",
+options:["Apple","Banana","Kiwi","Pear"],
+answer:"Apple"
+},
+
+{
+question:"Which fruit has orange flesh?",
+options:["Papaya","Grape","Cherry","Blueberry"],
+answer:"Papaya"
+},
+
+{
+question:"Which fruit is small and blue?",
+options:["Blueberry","Mango","Lemon","Pear"],
+answer:"Blueberry"
+},
+
+{
+question:"Which fruit has a spiky outside?",
+options:["Durian","Apple","Orange","Grape"],
+answer:"Durian"
+},
+
+{
+question:"Which fruit is used to make lemonade?",
+options:["Lemon","Mango","Banana","Grape"],
+answer:"Lemon"
+},
+
+{
+question:"Which fruit is large with black seeds?",
+options:["Watermelon","Cherry","Apple","Kiwi"],
+answer:"Watermelon"
+},
+
+{
+question:"Which fruit is tropical and sweet?",
+options:["Mango","Potato","Carrot","Onion"],
+answer:"Mango"
+},
+
+{
+question:"Which fruit is purple and used for juice?",
+options:["Grape","Banana","Lemon","Orange"],
+answer:"Grape"
+},
+
+{
+question:"Which fruit has a sweet orange colour?",
+options:["Peach","Garlic","Pepper","Onion"],
+answer:"Peach"
+},
+
+{
+question:"Which fruit looks like a star when cut?",
+options:["Starfruit","Apple","Orange","Pear"],
+answer:"Starfruit"
+},
+
+{
+question:"Which fruit is green and sour?",
+options:["Lime","Banana","Cherry","Mango"],
+answer:"Lime"
+},
+
+{
+question:"Which fruit is known as the forbidden fruit?",
+options:["Apple","Orange","Grape","Kiwi"],
+answer:"Apple"
+},
+
+{
+question:"Which fruit is used on some pizzas?",
+options:["Pineapple","Garlic","Potato","Onion"],
+answer:"Pineapple"
+},
+
+{
+question:"Which fruit is orange and easy to peel?",
+options:["Tangerine","Apple","Grape","Pear"],
+answer:"Tangerine"
+},
+
+{
+question:"Which fruit contains many small seeds?",
+options:["Pomegranate","Banana","Mango","Coconut"],
+answer:"Pomegranate"
+},
+
+{
+question:"Which fruit is popular in tropical areas?",
+options:["Mango","Apple","Pear","Cherry"],
+answer:"Mango"
+},
+
+{
+question:"Which fruit is used to make wine?",
+options:["Grape","Apple","Orange","Lemon"],
+answer:"Grape"
+},
+
+{
+question:"Which fruit has a sweet creamy texture?",
+options:["Avocado","Lemon","Lime","Grape"],
+answer:"Avocado"
+},
+
+{
+question:"Which fruit is common in fruit salads?",
+options:["Apple","Onion","Garlic","Pepper"],
+answer:"Apple"
+},
+
+{
+question:"Which fruit is famous in tropical islands?",
+options:["Pineapple","Potato","Carrot","Beans"],
+answer:"Pineapple"
+},
+
+{
+question:"Which fruit is small purple and round?",
+options:["Grape","Banana","Orange","Watermelon"],
+answer:"Grape"
+},
+
+{
+question:"Which fruit is used to make orange juice?",
+options:["Orange","Apple","Pear","Kiwi"],
+answer:"Orange"
+},
+
+{
+question:"Which fruit has green skin and pink flesh?",
+options:["Guava","Banana","Cherry","Apple"],
+answer:"Guava"
+},
+
+{
+question:"Which fruit is a citrus fruit?",
+options:["Orange","Mango","Banana","Grape"],
+answer:"Orange"
+},
+
+{
+question:"Which fruit is sweet and eaten fresh?",
+options:["Pear","Onion","Garlic","Potato"],
+answer:"Pear"
+},
+
+{
+question:"Which fruit is dried to make prunes?",
+options:["Plum","Orange","Apple","Mango"],
+answer:"Plum"
+},
+
+{
+question:"Which fruit is used to make jam?",
+options:["Strawberry","Potato","Carrot","Onion"],
+answer:"Strawberry"
+},
+
+{
+question:"Which fruit has rough brown skin?",
+options:["Coconut","Apple","Grape","Cherry"],
+answer:"Coconut"
+},
+
+{
+question:"Which fruit is green and crunchy?",
+options:["Apple","Banana","Mango","Orange"],
+answer:"Apple"
+},
+
+{
+question:"Which fruit is usually peeled before eating?",
+options:["Banana","Grape","Cherry","Blueberry"],
+answer:"Banana"
+},
+
+{
+question:"Which fruit is sweet and yellow?",
+options:["Mango","Lemon","Lime","Cherry"],
+answer:"Mango"
 }
 
 ];
-
-
-
 
 
 
