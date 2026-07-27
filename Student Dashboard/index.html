@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Payment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 TechMinds Academy</h1>
+    <p class="subtitle">Student Payment Dashboard</p>
+
+   
+    <div id="formSection">
+
+        <label>Student Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Class</label>
+        <select id="studentClass">
+            <option>JSS1</option>
+            <option>JSS2</option>
+            <option>JSS3</option>
+            <option>SS1</option>
+            <option>SS2</option>
+            <option>SS3</option>
+        </select>
+
+        <label>Payment Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <label>Purpose</label>
+        <select id="purpose">
+            <option>Tuition</option>
+            <option>PTA Levy</option>
+            <option>Result Checking</option>
+            <option>Examination Fee</option>
+        </select>
+
+        <button id="reviewBtn">Review Payment</button>
+
+    </div>
+
+    <div id="receiptSection" class="hidden">
+
+        <h2>✅ Payment Received</h2>
+
+        <div class="receipt">
+
+            <h3>Student Information</h3>
+
+            <p id="displayName"></p>
+            <p id="displayClass"></p>
+            <p id="displayAmount"></p>
+            <p id="displayPurpose"></p>
+            <p id="displayStatus"></p>
+            <p id="displayDate"></p>
+            <p id="displayReference"></p>
+
+        </div>
+
+        <button id="newPaymentBtn">New Payment</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
